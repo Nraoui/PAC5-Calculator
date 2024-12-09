@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_app_8xaml_8cs" kind="file" language="C#">
+    <compoundname>App.xaml.cs</compoundname>
+    <innerclass refid="class_calculator_1_1_app" prot="public">Calculator::App</innerclass>
+    <innernamespace refid="namespace_calculator">Calculator</innernamespace>
+    <innernamespace refid="namespace_system_1_1_configuration">System::Configuration</innernamespace>
+    <innernamespace refid="namespace_system_1_1_data">System::Data</innernamespace>
+    <innernamespace refid="namespace_system_1_1_windows">System::Windows</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Calculator/App.xaml.cs"/>
+  </compounddef>
+</doxygen>

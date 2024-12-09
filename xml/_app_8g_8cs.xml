@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_app_8g_8cs" kind="file" language="C#">
+    <compoundname>App.g.cs</compoundname>
+    <innerclass refid="class_calculator_1_1_app" prot="public">Calculator::App</innerclass>
+    <innernamespace refid="namespace_calculator">Calculator</innernamespace>
+    <innernamespace refid="namespace_system_1_1_diagnostics">System::Diagnostics</innernamespace>
+    <innernamespace refid="namespace_system_1_1_windows_1_1_automation">System::Windows::Automation</innernamespace>
+    <innernamespace refid="namespace_system_1_1_windows_1_1_controls_1_1_primitives">System::Windows::Controls::Primitives</innernamespace>
+    <innernamespace refid="namespace_system_1_1_windows_1_1_controls_1_1_ribbon">System::Windows::Controls::Ribbon</innernamespace>
+    <innernamespace refid="namespace_system_1_1_windows_1_1_ink">System::Windows::Ink</innernamespace>
+    <innernamespace refid="namespace_system_1_1_windows_1_1_markup">System::Windows::Markup</innernamespace>
+    <innernamespace refid="namespace_system_1_1_windows_1_1_media_1_1_animation">System::Windows::Media::Animation</innernamespace>
+    <innernamespace refid="namespace_system_1_1_windows_1_1_media_1_1_effects">System::Windows::Media::Effects</innernamespace>
+    <innernamespace refid="namespace_system_1_1_windows_1_1_media_1_1_media3_d">System::Windows::Media::Media3D</innernamespace>
+    <innernamespace refid="namespace_system_1_1_windows_1_1_media_1_1_text_formatting">System::Windows::Media::TextFormatting</innernamespace>
+    <innernamespace refid="namespace_system_1_1_windows_1_1_shell">System::Windows::Shell</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Calculator/obj/Debug/net8.0-windows/App.g.cs"/>
+  </compounddef>
+</doxygen>

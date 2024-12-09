@@ -1,0 +1,312 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_calculator_1_1_calculadora_core" kind="class" language="C#" prot="package">
+    <compoundname>Calculator::CalculadoraCore</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_calculator_1_1_calculadora_core_1ab7d1ec068d658b57e287de4e642891e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string Calculator.CalculadoraCore.EvaluateExpression</definition>
+        <argsstring>(string expression)</argsstring>
+        <name>EvaluateExpression</name>
+        <param>
+          <type>string</type>
+          <declname>expression</declname>
+        </param>
+        <briefdescription>
+<para>Evaluates a mathematical expression and returns the result as a string. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expression</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The mathematical expression to evaluate.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The result of the evaluated expression.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Calculator/CalculadoraCore.cs" line="20" column="1" bodyfile="Calculator/CalculadoraCore.cs" bodystart="20" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_calculator_1_1_calculadora_core_1ab1d2e62673343e024b009e8bac375372" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Calculator.CalculadoraCore.Evaluate</definition>
+        <argsstring>(string expression)</argsstring>
+        <name>Evaluate</name>
+        <param>
+          <type>string</type>
+          <declname>expression</declname>
+        </param>
+        <briefdescription>
+<para>Recursively evaluates expressions, handling parentheses and operator precedence. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expression</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The expression to evaluate.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The evaluated result.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Calculator/CalculadoraCore.cs" line="44" column="1" bodyfile="Calculator/CalculadoraCore.cs" bodystart="44" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_calculator_1_1_calculadora_core_1ab6aec43e420e6d76e4b6b22a4ea39c63" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Calculator.CalculadoraCore.EvaluateFlatExpression</definition>
+        <argsstring>(string expression)</argsstring>
+        <name>EvaluateFlatExpression</name>
+        <param>
+          <type>string</type>
+          <declname>expression</declname>
+        </param>
+        <briefdescription>
+<para>Evaluates a flat expression without parentheses. </para>        </briefdescription>
+        <detaileddescription>
+<para>Supports operators: +, -, *, /, ^, and ✓. </para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expression</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The expression to evaluate.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The evaluated result.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Calculator/CalculadoraCore.cs" line="72" column="1" bodyfile="Calculator/CalculadoraCore.cs" bodystart="72" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="class_calculator_1_1_calculadora_core_1aca33c4a310bab900d2e47b10ed534ffa" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Calculator.CalculadoraCore.AreParenthesesBalanced</definition>
+        <argsstring>(string expression)</argsstring>
+        <name>AreParenthesesBalanced</name>
+        <param>
+          <type>string</type>
+          <declname>expression</declname>
+        </param>
+        <briefdescription>
+<para>Validates if the parentheses in the expression are balanced. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expression</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The expression to validate.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if parentheses are balanced, false otherwise.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Calculator/CalculadoraCore.cs" line="190" column="1" bodyfile="Calculator/CalculadoraCore.cs" bodystart="190" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="class_calculator_1_1_calculadora_core_1ae96543dc71e1ef631b7c9f62793afff7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Calculator.CalculadoraCore.AreOperatorsValid</definition>
+        <argsstring>(string expression)</argsstring>
+        <name>AreOperatorsValid</name>
+        <param>
+          <type>string</type>
+          <declname>expression</declname>
+        </param>
+        <briefdescription>
+<para>Validates operator usage in the expression. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expression</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The expression to validate.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if operators are used correctly, false otherwise.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Calculator/CalculadoraCore.cs" line="207" column="1" bodyfile="Calculator/CalculadoraCore.cs" bodystart="207" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="class_calculator_1_1_calculadora_core_1aa41059925f923a2193b4bac9f826f158" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Calculator.CalculadoraCore.Add</definition>
+        <argsstring>(double a, double b)</argsstring>
+        <name>Add</name>
+        <param>
+          <type>double</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Adds two numbers together. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first number to add.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second number to add.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The sum of <emphasis>a</emphasis>  and <emphasis>b</emphasis> .</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Calculator/CalculadoraCore.cs" line="238" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_calculator_1_1_calculadora_core_1a843319994b55bc1a79f5901132b92988" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Calculator.CalculadoraCore.Subtract</definition>
+        <argsstring>(double a, double b)</argsstring>
+        <name>Subtract</name>
+        <param>
+          <type>double</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Subtracts the second number from the first. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first number to subtract from.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number to subtract.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The result of <emphasis>a</emphasis>  - <emphasis>b</emphasis> .</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Calculator/CalculadoraCore.cs" line="245" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_calculator_1_1_calculadora_core_1a5e4a6e8da2f730c6f139c6de9e4f5874" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Calculator.CalculadoraCore.Multiply</definition>
+        <argsstring>(double a, double b)</argsstring>
+        <name>Multiply</name>
+        <param>
+          <type>double</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Multiplies two numbers. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first number to multiply.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second number to multiply.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The product of <emphasis>a</emphasis>  and <emphasis>b</emphasis> .</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Calculator/CalculadoraCore.cs" line="252" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_calculator_1_1_calculadora_core_1a85b81bca587bf6d11e7aeb49cd50d13c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Calculator.CalculadoraCore.Divide</definition>
+        <argsstring>(double a, double b)</argsstring>
+        <name>Divide</name>
+        <param>
+          <type>double</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Divides the first number by the second. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The dividend.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The divisor.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The quotient of <emphasis>a</emphasis>  divided by <emphasis>b</emphasis> .</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>DivideByZeroException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown when dividing by zero.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Calculator/CalculadoraCore.cs" line="260" column="1" bodyfile="Calculator/CalculadoraCore.cs" bodystart="260" bodyend="265"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Core class responsible for evaluating mathematical expressions. </para>    </briefdescription>
+    <detaileddescription>
+<para>Provides support for basic arithmetic operations and square root calculations. </para>    </detaileddescription>
+    <location file="Calculator/CalculadoraCore.cs" line="14" column="1" bodyfile="Calculator/CalculadoraCore.cs" bodystart="13" bodyend="268"/>
+    <listofallmembers>
+      <member refid="class_calculator_1_1_calculadora_core_1aa41059925f923a2193b4bac9f826f158" prot="private" virt="non-virtual"><scope>Calculator::CalculadoraCore</scope><name>Add</name></member>
+      <member refid="class_calculator_1_1_calculadora_core_1ae96543dc71e1ef631b7c9f62793afff7" prot="private" virt="non-virtual"><scope>Calculator::CalculadoraCore</scope><name>AreOperatorsValid</name></member>
+      <member refid="class_calculator_1_1_calculadora_core_1aca33c4a310bab900d2e47b10ed534ffa" prot="private" virt="non-virtual"><scope>Calculator::CalculadoraCore</scope><name>AreParenthesesBalanced</name></member>
+      <member refid="class_calculator_1_1_calculadora_core_1a85b81bca587bf6d11e7aeb49cd50d13c" prot="private" virt="non-virtual"><scope>Calculator::CalculadoraCore</scope><name>Divide</name></member>
+      <member refid="class_calculator_1_1_calculadora_core_1ab1d2e62673343e024b009e8bac375372" prot="private" virt="non-virtual"><scope>Calculator::CalculadoraCore</scope><name>Evaluate</name></member>
+      <member refid="class_calculator_1_1_calculadora_core_1ab7d1ec068d658b57e287de4e642891e7" prot="public" virt="non-virtual"><scope>Calculator::CalculadoraCore</scope><name>EvaluateExpression</name></member>
+      <member refid="class_calculator_1_1_calculadora_core_1ab6aec43e420e6d76e4b6b22a4ea39c63" prot="private" virt="non-virtual"><scope>Calculator::CalculadoraCore</scope><name>EvaluateFlatExpression</name></member>
+      <member refid="class_calculator_1_1_calculadora_core_1a5e4a6e8da2f730c6f139c6de9e4f5874" prot="private" virt="non-virtual"><scope>Calculator::CalculadoraCore</scope><name>Multiply</name></member>
+      <member refid="class_calculator_1_1_calculadora_core_1a843319994b55bc1a79f5901132b92988" prot="private" virt="non-virtual"><scope>Calculator::CalculadoraCore</scope><name>Subtract</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

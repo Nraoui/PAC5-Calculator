@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_main_window_8g_8cs" kind="file" language="C#">
+    <compoundname>MainWindow.g.cs</compoundname>
+    <innerclass refid="class_calculator_1_1_main_window" prot="public">Calculator::MainWindow</innerclass>
+    <innernamespace refid="namespace_calculator">Calculator</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Calculator/obj/Debug/net8.0-windows/MainWindow.g.cs"/>
+  </compounddef>
+</doxygen>
