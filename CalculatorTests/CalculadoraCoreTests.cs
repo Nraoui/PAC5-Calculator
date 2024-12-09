@@ -169,32 +169,55 @@ namespace CalculatorTests
             var resultat = _calculadora.EvaluateExpression("5        * 3 + 2");
             Assert.Equal(17, resultat);
         }
-    
+
+        [Fact]
+        public void TestNegativeNumber_Addition()
+        {
+            var result = _calculadora.EvaluateExpression("-5 + 3");
+            Assert.Equal(-2, result);  // Expected result: -2
+        }
+
+        [Fact]
+        public void TestNegativeNumber_Multiplication()
+        {
+            var result = _calculadora.EvaluateExpression("-5 * 3");
+            Assert.Equal(-15, result);  // Expected result: -15
+        }
+
+        [Fact]
+        public void TestNegativeNumber_Division()
+        {
+            var result = _calculadora.EvaluateExpression("5 / -2");
+            Assert.Equal(-2.5, result);  // Expected result: -2.5
+        }
+
+        
 
 
 
-    /* TODO: Proves pendents a elaborar i afegir
 
-        01. [SUCCESS] 5 + 3 * 2 - 4 / 2 = 9
-        02. [SUCCESS] 2 ^ 3 = 8
-        03. [SUCCESS] 0 ^ 5 = 0
-        04. [SUCCESS] √ 16 = 4
-        05. [SUCCESS] √ 0 = 0
-        06. [FORMATEXCEPTION] 3 √ 6 = FAIL
-        07. [SUCCESS] 3 * √ 9 = 9
-        08. [INVALIDOPERATIONEXCEPTION] √ -4 = FAIL
-        09. [SUCCESS] ( 5 + 3 ) * 2 = 16
-        10. [SUCCESS] ( ( 2 + 3 ) * 2 ) = 10
-        11. [FORMATEXCEPTION] 5 + ( 3 * 2 = FAIL
-        12. [FORMATEXCEPTION] 5 + 3 ) * 2 = FAIL
-        13. [SUCCESS] 3 + 5 * ( 2 ^ 3 ) - √ 16 = 39
-        14. [FORMATEXCEPTION] 2(8 + 2) = FAIL
-        15. [FORMATEXCEPTION] (8 + 2)2 = FAIL
-        16. [SUCCESS] 3 + 5 * ( 2 ^ 3 ) - √ 16 = 39
-        17. [FORMATEXCEPTION] (5)3 + 2 = FAIL
-        18. [SUCCESS] 5        * 3 + 2 = 17
-    */
-}
+        /* TODO: Proves pendents a elaborar i afegir
+
+            01. [SUCCESS] 5 + 3 * 2 - 4 / 2 = 9
+            02. [SUCCESS] 2 ^ 3 = 8
+            03. [SUCCESS] 0 ^ 5 = 0
+            04. [SUCCESS] √ 16 = 4
+            05. [SUCCESS] √ 0 = 0
+            06. [FORMATEXCEPTION] 3 √ 6 = FAIL
+            07. [SUCCESS] 3 * √ 9 = 9
+            08. [INVALIDOPERATIONEXCEPTION] √ -4 = FAIL
+            09. [SUCCESS] ( 5 + 3 ) * 2 = 16
+            10. [SUCCESS] ( ( 2 + 3 ) * 2 ) = 10
+            11. [FORMATEXCEPTION] 5 + ( 3 * 2 = FAIL
+            12. [FORMATEXCEPTION] 5 + 3 ) * 2 = FAIL
+            13. [SUCCESS] 3 + 5 * ( 2 ^ 3 ) - √ 16 = 39
+            14. [FORMATEXCEPTION] 2(8 + 2) = FAIL
+            15. [FORMATEXCEPTION] (8 + 2)2 = FAIL
+            16. [SUCCESS] 3 + 5 * ( 2 ^ 3 ) - √ 16 = 39
+            17. [FORMATEXCEPTION] (5)3 + 2 = FAIL
+            18. [SUCCESS] 5        * 3 + 2 = 17
+        */
+    }
 
 
 

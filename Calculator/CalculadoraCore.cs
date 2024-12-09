@@ -87,7 +87,20 @@ namespace Calculator
             {
                 char currentChar = expression[i];
 
-                if (char.IsDigit(currentChar) || currentChar == '.')
+                // Handle negative numbers
+                if (currentChar == '-' && (i == 0 || "+-*/^(".Contains(expression[i - 1])))
+                {
+                    string number = "-"; // Start number with a negative sign
+                    i++;
+                    while (i < expression.Length && (char.IsDigit(expression[i]) || expression[i] == '.'))
+                    {
+                        number += expression[i];
+                        i++;
+                    }
+                    numbers.Add(double.Parse(number));
+                }
+
+                else if (char.IsDigit(currentChar) || currentChar == '.')
                 {
                     string number = "";
                     while (i < expression.Length && (char.IsDigit(expression[i]) || expression[i] == '.'))

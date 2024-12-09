@@ -130,6 +130,14 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a57ba150c19c96c9987d341c48210d674"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_calculator_1_1_main_window.html#a57ba150c19c96c9987d341c48210d674">IsLastNumberDecimal</a> ()</td></tr>
 <tr class="memdesc:a57ba150c19c96c9987d341c48210d674"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the last number in the current operation contains a decimal point.  <a href="#a57ba150c19c96c9987d341c48210d674">More...</a><br /></td></tr>
 <tr class="separator:a57ba150c19c96c9987d341c48210d674"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d7dfabd2cb6ad0a55f0e8371749b805"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_calculator_1_1_main_window.html#a0d7dfabd2cb6ad0a55f0e8371749b805">Backspace_Click</a> (object sender, RoutedEventArgs e)</td></tr>
+<tr class="separator:a0d7dfabd2cb6ad0a55f0e8371749b805"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1376f93dac2a8cbfa4eadd50110bf899"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_calculator_1_1_main_window.html#a1376f93dac2a8cbfa4eadd50110bf899">HistoryUp_Click</a> (object sender, RoutedEventArgs e)</td></tr>
+<tr class="separator:a1376f93dac2a8cbfa4eadd50110bf899"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97287e04e454163fcb6b1f006a6d9296"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_calculator_1_1_main_window.html#a97287e04e454163fcb6b1f006a6d9296">HistoryDown_Click</a> (object sender, RoutedEventArgs e)</td></tr>
+<tr class="separator:a97287e04e454163fcb6b1f006a6d9296"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86db29779051981cfe422f840de8145e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_calculator_1_1_main_window.html#a86db29779051981cfe422f840de8145e">ToggleSign_Click</a> (object sender, RoutedEventArgs e)</td></tr>
+<tr class="separator:a86db29779051981cfe422f840de8145e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88d36cebf73eeb616ac8c70b90df217e"><td class="memItemLeft" align="right" valign="top">void System.Windows.Markup.IComponentConnector.&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_calculator_1_1_main_window.html#a88d36cebf73eeb616ac8c70b90df217e">Connect</a> (int connectionId, object target)</td></tr>
 <tr class="separator:a88d36cebf73eeb616ac8c70b90df217e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88d36cebf73eeb616ac8c70b90df217e"><td class="memItemLeft" align="right" valign="top">void System.Windows.Markup.IComponentConnector.&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_calculator_1_1_main_window.html#a88d36cebf73eeb616ac8c70b90df217e">Connect</a> (int connectionId, object target)</td></tr>
@@ -142,6 +150,12 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:ad53d648dea50dced0b75b0b1b9674c9a"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_calculator_1_1_main_window.html#ad53d648dea50dced0b75b0b1b9674c9a">currentOperation</a> = &quot;&quot;</td></tr>
 <tr class="memdesc:ad53d648dea50dced0b75b0b1b9674c9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the current mathematical operation as a string.  <a href="#ad53d648dea50dced0b75b0b1b9674c9a">More...</a><br /></td></tr>
 <tr class="separator:ad53d648dea50dced0b75b0b1b9674c9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d3f12309d49b5766d4db2665d6f6c47"><td class="memItemLeft" align="right" valign="top">readonly List&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_calculator_1_1_main_window.html#a0d3f12309d49b5766d4db2665d6f6c47">operationHistory</a> = new List&lt;string&gt;()</td></tr>
+<tr class="separator:a0d3f12309d49b5766d4db2665d6f6c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a115aec2595909fb7ed42d8770eef5467"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_calculator_1_1_main_window.html#a115aec2595909fb7ed42d8770eef5467">historyIndex</a> = -1</td></tr>
+<tr class="separator:a115aec2595909fb7ed42d8770eef5467"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abab45d3eb107b524db87192605a62c0f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_calculator_1_1_main_window.html#abab45d3eb107b524db87192605a62c0f">isNextNumberNegative</a> = false</td></tr>
+<tr class="separator:abab45d3eb107b524db87192605a62c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9eb218d4989a507ae153754699717ddf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_calculator_1_1_main_window.html#a9eb218d4989a507ae153754699717ddf">_contentLoaded</a></td></tr>
 <tr class="separator:a9eb218d4989a507ae153754699717ddf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -179,6 +193,42 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0d7dfabd2cb6ad0a55f0e8371749b805"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d7dfabd2cb6ad0a55f0e8371749b805">&#9670;&nbsp;</a></span>Backspace_Click()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Calculator.MainWindow.Backspace_Click </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>sender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RoutedEventArgs&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a8835e87ed9ae10377282497e0fdc2a45"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8835e87ed9ae10377282497e0fdc2a45">&#9670;&nbsp;</a></span>Button_Click()</h2>
 
@@ -434,6 +484,78 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a97287e04e454163fcb6b1f006a6d9296"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97287e04e454163fcb6b1f006a6d9296">&#9670;&nbsp;</a></span>HistoryDown_Click()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Calculator.MainWindow.HistoryDown_Click </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>sender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RoutedEventArgs&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1376f93dac2a8cbfa4eadd50110bf899"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1376f93dac2a8cbfa4eadd50110bf899">&#9670;&nbsp;</a></span>HistoryUp_Click()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Calculator.MainWindow.HistoryUp_Click </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>sender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RoutedEventArgs&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a280b5b8092b068e22ecbb8afa9d34790"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a280b5b8092b068e22ecbb8afa9d34790">&#9670;&nbsp;</a></span>InitializeComponent() <span class="overload">[1/2]</span></h2>
 
@@ -625,7 +747,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Handles the click event for the square root button. </p>
-<p>Adds the square root operator (represented by ✓) to the current operation. </p>
+<p>Adds the square root operator (represented by √) to the current operation. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sender</td><td>The square root button that was clicked.</td></tr>
@@ -633,6 +755,42 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a86db29779051981cfe422f840de8145e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86db29779051981cfe422f840de8145e">&#9670;&nbsp;</a></span>ToggleSign_Click()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Calculator.MainWindow.ToggleSign_Click </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>sender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RoutedEventArgs&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -721,6 +879,72 @@ Private Attributes</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a115aec2595909fb7ed42d8770eef5467"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a115aec2595909fb7ed42d8770eef5467">&#9670;&nbsp;</a></span>historyIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Calculator.MainWindow.historyIndex = -1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abab45d3eb107b524db87192605a62c0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abab45d3eb107b524db87192605a62c0f">&#9670;&nbsp;</a></span>isNextNumberNegative</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Calculator.MainWindow.isNextNumberNegative = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0d3f12309d49b5766d4db2665d6f6c47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d3f12309d49b5766d4db2665d6f6c47">&#9670;&nbsp;</a></span>operationHistory</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly List&lt;string&gt; Calculator.MainWindow.operationHistory = new List&lt;string&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

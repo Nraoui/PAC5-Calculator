@@ -15,7 +15,7 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_DAA7983D1B6844D78D501A46819EF8FB"
+        "MsmKey" = "8:_6B987DB4D96844B687F6868B7ABFB288"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -43,6 +43,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -59,6 +75,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -178,7 +202,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:PAC5_Calculadora"
         "ProductCode" = "8:{74856278-E0C7-4854-A905-9116B2C7AAAD}"
-        "PackageCode" = "8:{85D2EC34-9CF0-468B-A748-21474E647B39}"
+        "PackageCode" = "8:{D508AB24-0D1B-45C3-BD16-604597488EA1}"
         "UpgradeCode" = "8:{6E000B58-385F-4942-80FE-D8220F070355}"
         "AspNetVersion" = "8:"
         "RestartWWWService" = "11:FALSE"
@@ -306,7 +330,7 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_DAA7983D1B6844D78D501A46819EF8FB"
+            "Target" = "8:"
             "Folder" = "8:_566151ED491141D9BB6E4E7E056E7BA8"
             "WorkingFolder" = "8:_66D3D4592E9E4E1EA4FC757AAFC37005"
             "Icon" = "8:_EB4410AA7654425DA7884B9446EE7494"
@@ -725,7 +749,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_DAA7983D1B6844D78D501A46819EF8FB"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_6B987DB4D96844B687F6868B7ABFB288"
             {
             "SourcePath" = "8:..\\Calculator\\obj\\Debug\\net8.0-windows\\apphost.exe"
             "TargetName" = "8:"

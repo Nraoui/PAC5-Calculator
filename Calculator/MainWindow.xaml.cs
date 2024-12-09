@@ -23,6 +23,20 @@ namespace Calculator
         /// Stores the current mathematical operation as a string.
         /// </summary>
         private string currentOperation = "";
+        /// <summary>
+        /// List to store the history of operations (for the purpose of navigation through past calculations).
+        /// </summary>
+        private readonly List<string> operationHistory = new List<string>();
+        /// <summary>
+        /// The current index for navigating through the operation history.
+        /// Starts at -1, meaning no history is selected yet.
+        /// </summary>
+        private int historyIndex = -1;
+        /// <summary>
+        /// Flag indicating if the next number entered should be negative.
+        /// Used for handling the toggle of the sign of the number.
+        /// </summary>
+        private bool isNextNumberNegative = false;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="MainWindow"/> class.
@@ -103,6 +117,11 @@ namespace Calculator
                 }
 
                 double result = calculatorCore.EvaluateExpression(currentOperation);
+
+                string operationResult = $"{currentOperation} = {result}";
+                operationHistory.Add(operationResult);
+                historyIndex = operationHistory.Count; // Reset history navigation
+
                 Display.Text = $"{currentOperation} = {result}";
                 currentOperation = result.ToString(); // Update operation
             }
@@ -180,9 +199,64 @@ namespace Calculator
             }
             return false;
         }
+        /// <summary>
+        /// Handles the backspace button click event.
+        /// Removes the last character from the current operation.
+        /// </summary>
+        /// <param name="sender">The backspace button that was clicked.</param>
+        /// <param name="e">Event data for the button click.</param>
+        private void Backspace_Click(object sender, RoutedEventArgs e)
+        {
+            if (!string.IsNullOrEmpty(currentOperation))
+            {
+                currentOperation = currentOperation.Substring(0, currentOperation.Length - 1);
+                Display.Text = string.IsNullOrEmpty(currentOperation) ? "0" : currentOperation;
+            }
+        }
 
-        
+        /// <summary>
+        /// Navigates to the previous operation in history (↑ button).
+        /// </summary>
+        /// <param name="sender">The history up button that was clicked.</param>
+        /// <param name="e">Event data for the button click.</param>
+        private void HistoryUp_Click(object sender, RoutedEventArgs e)
+        {
+            if (historyIndex > 0)
+            {
+                historyIndex--;
+                Display.Text = operationHistory[historyIndex];
+            }
+        }
 
-        
+        /// <summary>
+        /// Navigates to the next operation in history (↓ button).
+        /// </summary>
+        /// <param name="sender">The history down button that was clicked.</param>
+        /// <param name="e">Event data for the button click.</param>
+        private void HistoryDown_Click(object sender, RoutedEventArgs e)
+        {
+            if (historyIndex < operationHistory.Count - 1)
+            {
+                historyIndex++;
+                Display.Text = operationHistory[historyIndex];
+            }
+        }
+        /// <summary>
+        /// Toggles the sign of the current number (adds a negative sign).
+        /// </summary>
+        /// <param name="sender">The toggle sign button that was clicked.</param>
+        /// <param name="e">Event data for the button click.</param>
+        private void ToggleSign_Click(object sender, RoutedEventArgs e)
+        {
+           
+            currentOperation += "-";  // Immediately show "-" if the input is empty or at the operator section
+            Display.Text = currentOperation;
+            isNextNumberNegative = true;
+
+        }
+
+
+
+
     }
 }

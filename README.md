@@ -1,6 +1,6 @@
 ﻿# 🧮 Calculator Application
 
-A simple calculator built using **WPF (Windows Presentation Foundation)** in C# for basic arithmetic operations. The application provides an intuitive user interface for performing calculations with functionalities like addition, subtraction, multiplication, and division, and advanced features like exponentiation and square roots.
+A simple calculator built using **WPF (Windows Presentation Foundation)** in C# for basic arithmetic operations. The application provides an intuitive user interface for performing calculations with functionalities like addition, subtraction, multiplication, and division, and advanced features like exponentiation and square roots, and operation history navigation.
 
 ## 📜 License and Author
 
@@ -33,6 +33,8 @@ A simple calculator built using **WPF (Windows Presentation Foundation)** in C# 
   - **Exponentiation (`^`)**: Raise a number to a power.
   - **Square Root (`√`)**: Calculate the square root of a number.
   - **Parentheses (`(` and `)`)**: Group parts of expressions to control the order of operations.  
+- **History Navigation**: View and navigate through past calculations using history buttons (up and down arrows).
+- **Negative Number Toggle**: Easily toggle the sign of a number during input.
 - Displays full calculation history for reference.  
 - Error handling for invalid operations (e.g., division by zero).  
 - Responsive user interface with a clean design.
@@ -67,7 +69,17 @@ A simple calculator built using **WPF (Windows Presentation Foundation)** in C# 
    - **Square Root**: Use the `√` button to calculate the square root of a number.
    - **Parentheses**: Use the `(` and `)` buttons to group expressions for proper calculation order.
 
-4. **Clear the Display**:  
+5. **Decimal Numbers**:  
+   - You can input decimal numbers by pressing the `.` button. The calculator ensures that only one decimal point is included per number.
+   
+6. **History Navigation**:  
+   - Use the **Up** and **Down** arrow buttons to navigate through the operation history.  
+   - The history is maintained for the calculations made during the session.
+
+7. **Negative Number Toggle**:  
+   - You can toggle the sign of the number you're inputting by using the sign toggle button. This will allow for negative numbers to be entered.
+
+8. **Clear the Display**:  
    Use the `C` button to clear the current operation.  
 
 ### Example Steps:
@@ -79,6 +91,9 @@ A simple calculator built using **WPF (Windows Presentation Foundation)** in C# 
 
 - **Input**: `√9`  
 - **Output**: `√9 = 3`
+
+- **Input**: `5.5 + 3.2`  
+- **Output**: `5.5 + 3.2 = 8.7`
 
 5. **Error Handling**:  
    - If you try to divide by zero, the application will display:  

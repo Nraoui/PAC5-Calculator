@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="450" Background="Black">
+        Title="PAC5-Calculator" Height="450" Width="380" Background="Black">
 
     <Grid>
         <Grid>
@@ -17,12 +17,13 @@
             <!-- Display -->
             <TextBox x:Name="Display" Text="0" FontSize="24" Padding="10" Grid.Row="0" Height="50" 
              VerticalAlignment="Center" HorizontalAlignment="Stretch" IsReadOnly="True" 
-             TextAlignment="Right" Background="Black" Foreground="White" BorderBrush="Gray" CaretBrush="White" />
+             TextAlignment="Right" Background="Black" Foreground="White" BorderBrush="{x:Null}" CaretBrush="White" />
 
             <!-- Buttons -->
             <Grid Grid.Row="1">
                 <!-- Define Rows and Columns -->
                 <Grid.RowDefinitions>
+                    <RowDefinition Height="1*" />
                     <RowDefinition Height="1*" />
                     <RowDefinition Height="1*" />
                     <RowDefinition Height="1*" />
@@ -38,33 +39,39 @@
                 </Grid.ColumnDefinitions>
 
                 <!-- Number and Operator Buttons -->
-                <Button Content="(" Grid.Row="0" Grid.Column="0" Click="Button_Click" Background="Black" Foreground="White" FontSize="16" BorderBrush="Gray" />
-                <Button Content=")" Grid.Row="0" Grid.Column="1" Click="Button_Click" Background="Black" Foreground="White" FontSize="16" BorderBrush="Gray" />
-                <Button Content="^" Grid.Row="0" Grid.Column="2" Click="Operator_Click" Background="Black" Foreground="White" FontSize="16" BorderBrush="Gray" />
-                <Button Content="√" Grid.Row="0" Grid.Column="3" Click="SquareRoot_Click" Background="Black" Foreground="White" FontSize="24" BorderBrush="Gray" />
+                <Button Content="⌫" Grid.Row="0" Grid.Column="3"  Click="Backspace_Click" Background="Black" Foreground="Green"  FontSize="24" BorderBrush="{x:Null}" />
+                <Button Content="(" Grid.Row="1" Grid.Column="0" Click="Button_Click" Background="Black" Foreground="White" FontSize="16" BorderBrush="Gray" />
+                <Button Content=")" Grid.Row="1" Grid.Column="1" Click="Button_Click" Background="Black" Foreground="White" FontSize="16" BorderBrush="Gray" />
+                <Button Content="^" Grid.Row="1" Grid.Column="2" Click="Operator_Click" Background="Black" Foreground="White" FontSize="16" BorderBrush="Gray" />
+                <Button Content="√" Grid.Row="1" Grid.Column="3" Click="SquareRoot_Click" Background="Black" Foreground="White" FontSize="24" BorderBrush="Gray" />
 
-                <Button Content="7" Grid.Row="1" Grid.Column="0" Click="Button_Click" Background="Black" Foreground="Blue" FontSize="16" BorderBrush="Gray" />
-                <Button Content="8" Grid.Row="1" Grid.Column="1" Click="Button_Click" Background="Black" Foreground="Blue" FontSize="16" BorderBrush="Gray" />
-                <Button Content="9" Grid.Row="1" Grid.Column="2" Click="Button_Click" Background="Black" Foreground="Blue" FontSize="16" BorderBrush="Gray" />
-                <Button Content="/" Grid.Row="1" Grid.Column="3" Click="Operator_Click" Background="Blue" Foreground="White" FontSize="24" BorderBrush="Gray" />
+                <Button Content="7" Grid.Row="2" Grid.Column="0" Click="Button_Click" Background="Black" Foreground="Blue" FontSize="16" BorderBrush="Gray" />
+                <Button Content="8" Grid.Row="2" Grid.Column="1" Click="Button_Click" Background="Black" Foreground="Blue" FontSize="16" BorderBrush="Gray" />
+                <Button Content="9" Grid.Row="2" Grid.Column="2" Click="Button_Click" Background="Black" Foreground="Blue" FontSize="16" BorderBrush="Gray" />
+                <Button Content="/" Grid.Row="2" Grid.Column="3" Click="Operator_Click" Background="Blue" Foreground="White" FontSize="24" BorderBrush="Gray" />
 
-                <Button Content="4" Grid.Row="2" Grid.Column="0" Click="Button_Click" Background="Black" Foreground="Blue" FontSize="16" BorderBrush="Gray" />
-                <Button Content="5" Grid.Row="2" Grid.Column="1" Click="Button_Click" Background="Black" Foreground="Blue" FontSize="16" BorderBrush="Gray" />
-                <Button Content="6" Grid.Row="2" Grid.Column="2" Click="Button_Click" Background="Black" Foreground="Blue" FontSize="16" BorderBrush="Gray" />
-                <Button Content="+" Grid.Row="2" Grid.Column="3" Click="Operator_Click" Background="Blue" Foreground="White" FontSize="24" BorderBrush="Gray" />
+                <Button Content="4" Grid.Row="3" Grid.Column="0" Click="Button_Click" Background="Black" Foreground="Blue" FontSize="16" BorderBrush="Gray" />
+                <Button Content="5" Grid.Row="3" Grid.Column="1" Click="Button_Click" Background="Black" Foreground="Blue" FontSize="16" BorderBrush="Gray" />
+                <Button Content="6" Grid.Row="3" Grid.Column="2" Click="Button_Click" Background="Black" Foreground="Blue" FontSize="16" BorderBrush="Gray" />
+                <Button Content="+" Grid.Row="3" Grid.Column="3" Click="Operator_Click" Background="Blue" Foreground="White" FontSize="24" BorderBrush="Gray" />
 
-                <Button Content="1" Grid.Row="3" Grid.Column="0" Click="Button_Click" Background="Black" Foreground="Blue" FontSize="16" BorderBrush="Gray" />
-                <Button Content="2" Grid.Row="3" Grid.Column="1" Click="Button_Click" Background="Black" Foreground="Blue" FontSize="16" BorderBrush="Gray" />
-                <Button Content="3" Grid.Row="3" Grid.Column="2" Click="Button_Click" Background="Black" Foreground="Blue" FontSize="16" BorderBrush="Gray" />
-                <Button Content="*" Grid.Row="3" Grid.Column="3" Click="Operator_Click" Background="Blue" Foreground="White" FontSize="24" BorderBrush="Gray" />
+                <Button Content="1" Grid.Row="4" Grid.Column="0" Click="Button_Click" Background="Black" Foreground="Blue" FontSize="16" BorderBrush="Gray" />
+                <Button Content="2" Grid.Row="4" Grid.Column="1" Click="Button_Click" Background="Black" Foreground="Blue" FontSize="16" BorderBrush="Gray" />
+                <Button Content="3" Grid.Row="4" Grid.Column="2" Click="Button_Click" Background="Black" Foreground="Blue" FontSize="16" BorderBrush="Gray" />
+                <Button Content="*" Grid.Row="4" Grid.Column="3" Click="Operator_Click" Background="Blue" Foreground="White" FontSize="24" BorderBrush="Gray" />
 
-                <Button Content="C" Grid.Row="4" Grid.Column="0" Click="Clear_Click" Background="Black" Foreground="Red" FontSize="16" />
-                <Button Content="0" Grid.Row="4" Grid.Column="1" Click="Button_Click" Background="Black" Foreground="Blue" FontSize="16" BorderBrush="Gray" />
-                <Button Content="." Grid.Row="4" Grid.Column="2" Click="Decimal_Click" Background="Black" Foreground="White" FontSize="16" />
-                <Button Content="-" Grid.Row="4" Grid.Column="3" Click="Operator_Click" Background="Blue" Foreground="White" FontSize="24" BorderBrush="Gray" />
+                
+                <Button Content="+/-" Grid.Row="5" Grid.Column="0" Click="ToggleSign_Click" Background="Black" Foreground="white" BorderBrush="Gray" FontSize="16"/>
+                <Button Content="0" Grid.Row="5" Grid.Column="1" Click="Button_Click" Background="Black" Foreground="Blue" FontSize="16" BorderBrush="Gray" />
+                <Button Content="." Grid.Row="5" Grid.Column="2" Click="Decimal_Click" Background="Black" Foreground="White" FontSize="16" />
+                <Button Content="-" Grid.Row="5" Grid.Column="3" Click="Operator_Click" Background="Blue" Foreground="White" FontSize="24" BorderBrush="Gray" />
 
                 <!-- Equal Button Spanning Full Width -->
-                <Button Content="=" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="4" Click="Equals_Click" Background="Black" Foreground="Green" BorderBrush="Gray" FontSize="24" />
+                <Button Content="C" Grid.Row="6" Grid.Column="0" Click="Clear_Click" Background="Black" Foreground="Red" FontSize="16" />
+                <Button Content="↑" Grid.Row="6" Grid.Column="1" Click="HistoryUp_Click" Background="Black" Foreground="white" BorderBrush="Gray" FontSize="16" />
+                <Button Content="↓" Grid.Row="6" Grid.Column="2" Click="HistoryDown_Click" Background="Black" Foreground="white" BorderBrush="Gray" FontSize="16"/>
+                <Button Content="=" Grid.Row="6" Grid.Column="3"  Click="Equals_Click" Background="Black" Foreground="Green" BorderBrush="Gray" FontSize="24" />
+                
             </Grid>
         </Grid>
 
